@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="justify-self-center text-4xl mt-2 font-mono-bold">CALCULATOR</h1>
+    <div class="justify-self-center items-center border-black border-2 rounded-2xl mt-10 pt-5 p-3">
+    <div>
+        <input type="text" id="num" disabled class="p-2 border-2 w-[330px] h-[60px] rounded-2xl border-black   text-3xl" >
+    </div>
+    <div>
+        <button class="border-2 rounded-full  w-[70px] h-[70px] m-1 bg-red-400 text-white text-3xl" onclick="clearall()"> AC </button>
+        <button class="border-2 rounded-full  w-[70px] h-[70px] m-1 bg-red-400 text-white text-3xl" onclick="getback()" >C</button>
+        <button class="border-2 rounded-full w-[70px] h-[70px] m-1 bg-orange-400 text-white text-3xl" onclick="calculatePercentage()">%</button>
+        <button class="border-2 rounded-full w-[70px] h-[70px] m-1 bg-orange-400 text-white text-3xl" onclick="getNumber('/')">/</button>
+    </div>
+    <div> 
+        <button class="border-2 rounded-full border-black w-[70px] h-[70px] m-1  text-black text-3xl" onclick="getNumber('9')">9</button>
+        <button class="border-2 rounded-full border-black w-[70px] h-[70px] m-1  text-black text-3xl" onclick="getNumber('8')">8</button>
+        <button class="border-2 rounded-full border-black w-[70px] h-[70px] m-1  text-black text-3xl" onclick="getNumber('7')">7</button>
+        <button class="border-2 rounded-full w-[70px] h-[70px] m-1 bg-orange-400 text-white text-3xl" onclick="getNumber('*')">X</button>
+    </div>
+
+    <div> 
+        <button class="border-2 rounded-full border-black w-[70px] h-[70px] m-1  text-black text-3xl" onclick="getNumber('6')">6</button>
+        <button class="border-2 rounded-full border-black w-[70px] h-[70px] m-1  text-black text-3xl" onclick="getNumber('5')">5</button>
+        <button class="border-2 rounded-full border-black w-[70px] h-[70px] m-1  text-black text-3xl" onclick="getNumber('4')">4</button>
+        <button class="border-2 rounded-full  w-[70px] h-[70px] m-1 bg-orange-400 text-white text-3xl" onclick="getNumber('-')">-</button>
+    </div>
+    <div>
+        <button class="border-2 rounded-full border-black w-[70px] h-[70px] m-1  text-black text-3xl" onclick="getNumber('1')">1</button>
+        <button class="border-2 rounded-full border-black w-[70px] h-[70px] m-1  text-black text-3xl" onclick="getNumber('2')">2</button>
+        <button class="border-2 rounded-full border-black w-[70px] h-[70px] m-1  text-black text-3xl" onclick="getNumber('3')">3</button>
+        <button class="border-2 rounded-full  w-[70px] h-[70px] m-1 bg-orange-400 text-white text-3xl" onclick="getNumber('+')">+</button>
+    </div>
+    <div>
+        <button class="border-2 rounded-full border-black w-[70px] h-[70px] m-1  text-black text-3xl" onclick="getNumber('0')">0</button>
+        <button class="border-2 rounded-full border-black w-[70px] h-[70px] m-1  text-black text-3xl" onclick="getNumber('.')">.</button>
+        <button class="border-2 rounded-full  w-[150px] h-[70px] m-1 bg-green-400 text-white text-3xl" onclick="getans()">=</button>
+        
+        
+
+
+    </div>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
